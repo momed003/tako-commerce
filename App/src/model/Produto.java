@@ -1,58 +1,67 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package model;
 
+/**
+ *
+ * @author momed003
+ */
 public class Produto {
-    private String referencia;
-    private String descricao;
-    private double preco;
-    private int cBarras;
-    private int quantidade;
-    private String Categoria;
+    //: referência, código de barras, descrição, preço, categoria/família.
+    private String reference;
+    private int BarCode;
+    private String description;
+    private double price;
+    private Categoria Categoria;
+    private Double discount;
 
-    public String getReferencia() {
-        return referencia;
+    public String getReference() {
+        return reference;
     }
 
-    public void setReferencia(String referencia) {
-        this.referencia = referencia;
+    public void setReference(String reference) {
+        this.reference = reference;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public double getPreco() {
-        return preco;
+    public double getPrice() {
+        return price;
     }
 
-    public void setPreco(double preco) {
-        this.preco = preco;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public int getcBarras() {
-        return cBarras;
-    }
-
-    public void setcBarras(int cBarras) {
-        this.cBarras = cBarras;
-    }
-
-    public int getQuantidade() {
-        return quantidade;
-    }
-
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
-    }
-
-    public String getCategoria() {
+    public Categoria getCategoria() {
         return Categoria;
     }
 
-    public void setCategoria(String categoria) {
-        Categoria = categoria;
+    public void setCategoria(Categoria Categoria) {
+        this.Categoria = Categoria;
+    }
+
+    public Double getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(Double discount) {
+        this.discount = discount;
+    }
+
+    public int getBarCode() {
+        return BarCode;
+    }
+
+    public void setBarCode(int BarCode) {
+        this.BarCode = BarCode;
     }
 }
